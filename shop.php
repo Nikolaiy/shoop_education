@@ -77,10 +77,10 @@
                 <div class="padding-nav">
 
                     <ul class="nav navbar-nav left">
-                        <li class="active">
+                        <li>
                             <a href="index.php">Главная</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="shop.php">Shop</a>
                         </li>
                         <li>
