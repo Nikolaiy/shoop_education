@@ -135,12 +135,12 @@
             <div class="col-md-12">    
                 <ul class=breadcrumb>
                     <li><a href="index.php">Home</a></li>
-                    <li>Shop</li>
+                    <li>Cart</li>
                 </ul>
             </div>
 
             <div id="cart" class="col-md-9">
-                <div class="form">
+                <div class="box">
                     <form action="cart.php" method="post" enctype="muiltipart/form-data">
                         <h1>Shopping Cart</h1>
                         <p class="text-muted">You currently have 3 item(s) in oyur cart</p>
@@ -175,7 +175,7 @@
                                             Large
                                         </td>
                                         <td>
-                                            <input type="checked" name="remove[]">
+                                            <input type="checkbox" name="remove[]">
                                         </td>
                                         <td>
                                             $100
@@ -201,7 +201,7 @@
                                             Large
                                         </td>
                                         <td>
-                                            <input type="checked" name="remove[]">
+                                            <input type="checkbox" name="remove[]">
                                         </td>
                                         <td>
                                             $100
@@ -227,7 +227,7 @@
                                             Large
                                         </td>
                                         <td>
-                                            <input type="checked" name="remove[]">
+                                            <input type="checkbox" name="remove[]">
                                         </td>
                                         <td>
                                             $100
@@ -315,6 +315,39 @@
 
                 </div>
 
+            </div>
+
+            <div class="col-md-3">
+                <div id="order-summary" class="box">
+                    <div class="box-header">
+                        <h3>Order Summary</h3>
+                    </div>
+                    <p class="text-muted">
+                        Shipping and additional costs are calculated based on value you have entered
+                    </p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td> Order Sub-Total </td>
+                                    <th> $200 </th>
+                                </tr>
+                                <tr>
+                                    <td> Shipping and Handling </td>
+                                    <th> $0 </th>
+                                </tr>
+                                <tr>
+                                    <td> Tax </td>
+                                    <th> $0 </th>
+                                </tr>
+                                <tr class="total">
+                                    <td> Total </td>
+                                    <th> $200 </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
 
         </div>
