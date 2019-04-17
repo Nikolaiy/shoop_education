@@ -29,7 +29,7 @@
 
                 <ul class="menu">
                     <li>
-                        <a href="customer-register.php">Register</a>
+                        <a href="customer_register.php">Register</a>
                     </li>
                     <li>
                         <a href="checkout.php">My Account</a>
