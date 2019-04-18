@@ -29,16 +29,16 @@
 
                 <ul class="menu">
                     <li>
-                        <a href="customer_register.php">Register</a>
+                        <a href="../customer_register.php">Register</a>
                     </li>
                     <li>
-                        <a href="customer/my_account.php">My Account</a>
+                        <a href="my_account.php">My Account</a>
                     </li>
                     <li>
-                        <a href="cart.php">Go To Cart</a>
+                        <a href="../cart.php">Go To Cart</a>
                     </li>
                     <li>
-                        <a href="checkout.php">Login</a>
+                        <a href="../checkout.php">Login</a>
                     </li>
                 </ul>
 
@@ -78,19 +78,19 @@
 
                     <ul class="nav navbar-nav left">
                         <li>
-                            <a href="index.php">Главная</a>
+                            <a href="../index.php">Главная</a>
                         </li>
                         <li>
-                            <a href="shop.php">Shop</a>
-                        </li>
-                        <li>
-                            <a href="customer/my_account.php">My Account</a>
-                        </li>
-                        <li>
-                            <a href="cart.php">Shopping Cart</a>
+                            <a href="../shop.php">Shop</a>
                         </li>
                         <li class="active">
-                            <a href="contact.php">Contact Us</a>
+                            <a href="my_account.php">My Account</a>
+                        </li>
+                        <li>
+                            <a href="../cart.php">Shopping Cart</a>
+                        </li>
+                        <li>
+                            <a href="../contact.php">Contact Us</a>
                         </li>
                     </ul>
 
@@ -135,7 +135,7 @@
                 
                 <ul class=breadcrumb>
                     <li><a href="index.php">Home</a></li>
-                    <li>Contact Us</li>
+                    <li>My Account</li>
                 </ul>
 
             </div>
@@ -148,50 +148,17 @@
 
             ?>
 
-            </div>
+            </div>  
 
             <div class="col-md-9">
                 <div class="box">
-                    <div class="box-header">
-                        
-                        <center>
-                            <h2>Feel free to Contact Us</h2>
-                            <p class="text-muted">
-                                If You have any questions, feel free to contact us. Our Customer Service work <strong>24/7</strong> 
-                            </p>
-                        </center>
+                    <?php 
 
-                        <form action="contact.php" method="post">
-                            
-                            <div class="form-group">
-                                <label>Name</label>
-                                <input type="text" class="form-control" name="name" required>
-                            </div>
+                        if (isset($_GET['my_orders'])){
+                            include("my_orders.php");
+                        }
 
-                            <div class="form-group">
-                                <label>Email</label>
-                                <input type="text" class="form-control" name="email" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Subject</label>
-                                <input type="text" class="form-control" name="subject" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Message</label>
-                                <textarea name="message" class="form-control"></textarea>
-                            </div>
-
-                            <div class="text-center">
-                                <button type="submit" name="submit" class="btn btn-primary">
-                                    <i class="fa fa-user-md"></i> Send Message
-                                </button>
-                            </div>
-
-                        </form>
-
-                    </div>
+                    ?>
                 </div>
             </div>
 
